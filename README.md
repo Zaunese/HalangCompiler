@@ -17,9 +17,8 @@ Compile _Halang_ to _C++_.
 |什么也不说|void|
 |弄个|throw|
 |大新闻|exception|
-|大新闻说a|exception(a)|
 |我说(a)|printf(a)|
-|你们有一个好(a)|scanf(a)|
+|提高警惕(a)|scanf(a)|
 |党章|stdout|
 |理论|stdin|
 |把a写进b|b=a|
@@ -30,7 +29,7 @@ Compile _Halang_ to _C++_.
 |呼应|#define|
 |钦定a是b啦|a=b|
 |另请高明|goto|
-|识得唔识得a|assert(a)|
+|识得唔识得(a)|assert(a)|
 |a那个b|a.b|
 |你将来报道|return|
 |加一秒|++|
