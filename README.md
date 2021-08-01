@@ -2,6 +2,10 @@
 
 Compile _Halang_ to _C++_.
 
+Usage: `main.py xxx.halang`
+
+The source code must use **UTF-8** encoding.
+
 | Halang | C++ |
 | :----------: | :----------: |
 |a比b不知道高到哪里去了|a>b|
