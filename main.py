@@ -60,16 +60,16 @@ with open(filename,'r',encoding='utf8') as f:
             l=l.replace('奋斗','while')
             l=l.replace('行程','for')
 
-            l=re.sub('把(.*?)写进(.*?)([,;\{\}\s])', \
-                lambda x:'{}={}{}'.format(x.group(2),x.group(1),x.group(3)),l)
             l=re.sub('把(.*?)批判一番([,;\{\}\s])', \
                 lambda x:'fprintf(stderr,{}){}'.format(x.group(1),x,group(2)),l)
-            l=re.sub('钦定(.*?)是(.*?)啦', \
-                lambda x:'{}={}'.format(x.group(1),x.group(2)),l)
             l=re.sub('(.*?)比(.*?)不知道高到哪里去了', \
                 lambda x:'{}>{}'.format(x.group(1),x.group(2)),l)
             l=re.sub('(.*?)比(.*?)跑得还快', \
                 lambda x:'{}>{}'.format(x.group(1),x.group(2)),l)
+            l=re.sub('把(.*?)写进(.*?)([,;\{\}\s])', \
+                lambda x:'{}={}{}'.format(x.group(2),x.group(1),x.group(3)),l)
+            l=re.sub('钦定(.*?)是(.*?)啦', \
+                lambda x:'{}={}'.format(x.group(1),x.group(2)),l)
 
             l=l.replace('得','')
             of.writelines([l])
